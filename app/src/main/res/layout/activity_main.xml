@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:src="@drawable/title"
+            />
+
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="50dp"
+            android:text="Register with mobile no"
+            android:textColor="@color/black"
+            android:textSize="34dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:background="@drawable/layout_shadow">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                app:ccp_textSize="28sp" />
+
+            <EditText
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:inputType="number"/>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:text="Create account"
+            android:textAllCaps="false"
+            android:background="@drawable/round"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="60dp"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
